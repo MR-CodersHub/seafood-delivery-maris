@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found — MARIS &amp; CATCH</title>
+  <meta name="description" content="The page you were looking for slipped off the hook. Head back to the harbor and find today's catch.">
+  <link rel="icon" type="image/png" href="../../assets/images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../src/css/style.css">
+  <link rel="stylesheet" href="../../src/css/pages.css">
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('maris-theme');
+        if (!t) { t = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'; }
+        if (t === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+        var d = localStorage.getItem('maris-dir');
+        if (d === 'rtl' || (!d && /^(ar|he|fa|ur|ps|sd)/i.test(navigator.language || ''))) document.documentElement.setAttribute('dir', 'rtl');
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <div id="site-navbar"></div>
+
+  <main>
+    <!-- 1. HERO -->
+    <section class="error-hero">
+      <div class="container error-hero-inner">
+        <div class="error-code">404</div>
+        <h1 class="error-title">This Page Slipped Off the Hook</h1>
+        <p class="error-sub">The link may be broken, or the page may have been moved to a different harbor. Let’s get you back to calm waters.</p>
+        <div class="flex-wrap" style="justify-content:center;margin-top:8px;">
+          <a href="../../index.html" class="btn btn-ocean">Back to Home</a>
+          <a href="../../index.html#catch" class="btn btn-secondary">Shop Today’s Catch</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. QUICK LINKS -->
+    <section class="section section--tight">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Popular Destinations</span>
+          <h2 class="section-title">Where Would You Like to Go?</h2>
+        </div>
+        <div class="grid grid-3">
+          <a class="feature-card reveal" href="products.html" style="text-decoration:none;"><div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon></svg></div><h4>Our Products</h4><p>Fresh fish, shellfish, fillets and ready-to-serve platters.</p></a>
+          <a class="feature-card reveal" href="blog.html" style="text-decoration:none;"><div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div><h4>Journal &amp; Recipes</h4><p>Guides and recipes from our fishmongers.</p></a>
+          <a class="feature-card reveal" href="pricing.html" style="text-decoration:none;"><div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg></div><h4>Pricing Plans</h4><p>Compare memberships and save on delivery.</p></a>
+          <a class="feature-card reveal" href="FAQ.html" style="text-decoration:none;"><div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg></div><h4>FAQs</h4><p>Fast answers to common questions.</p></a>
+          <a class="feature-card reveal" href="contact.html" style="text-decoration:none;"><div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg></div><h4>Contact Us</h4><p>Reach the harbor support desk.</p></a>
+          <a class="feature-card reveal" href="about.html" style="text-decoration:none;"><div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12c5-7 15-7 20 0-5 7-15 7-20 0z"></path></svg></div><h4>About Us</h4><p>Meet the crew behind your catch.</p></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. SUPPORT OPTIONS -->
+    <section class="section section--ice">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Need a Hand?</span>
+          <h2 class="section-title">We Can Help You Navigate</h2>
+          <p class="lead-text">If you followed a link expecting something specific, let us know and we’ll sort it out.</p>
+        </div>
+        <div class="grid grid-3">
+          <div class="feature-card reveal"><div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg></div><h4>Live Chat</h4><p>Message our harbor team during market hours for instant help.</p></div>
+          <div class="feature-card reveal"><div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg></div><h4>Call Us</h4><p>Speak to a specialist on +1 (800) 428-FISH, Mon–Sat.</p></div>
+          <div class="feature-card reveal"><div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg></div><h4>Visit the FAQs</h4><p>Most answers about orders, delivery and storage live there.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. MINI FAQ -->
+    <section class="section">
+      <div class="container container--narrow">
+        <div class="section-head">
+          <span class="eyebrow">Common Questions</span>
+          <h2 class="section-title">While You’re Here</h2>
+        </div>
+        <div class="faq-accordion">
+          <div class="faq-item open">
+            <button class="faq-q" aria-expanded="true"><span>Why did I land on this page?</span><span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg></span></button>
+            <div class="faq-a" style="max-height:260px;"><div class="faq-a-inner">Usually a mistyped address or an outdated link. The page may also have been renamed or moved during a site update.</div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>How do I get back on track?</span><span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg></span></button>
+            <div class="faq-a"><div class="faq-a-inner">Use the quick links above, or head back to the home page and browse today’s catch. Everything is one or two clicks away.</div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>Can you fix a broken link on your site?</span><span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg></span></button>
+            <div class="faq-a"><div class="faq-a-inner">Yes — please tell us which link you followed and where you found it. Our team will correct it quickly.</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. CTA -->
+    <section class="final-cta-section">
+      <img src="../../assets/images/fishing_boat.jpg" alt="Fishing boat" class="cta-bg-image">
+      <div class="cta-overlay"></div>
+      <div class="container cta-content">
+        <span class="eyebrow eyebrow-light">STILL LOST AT SEA?</span>
+        <h2 class="cta-title">We’ll Help You Find It</h2>
+        <p class="cta-desc">Tell us what you were looking for and our team will point you in the right direction.</p>
+        <div class="cta-buttons"><a href="contact.html" class="btn btn-ocean">Contact Us</a></div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="../../src/js/data.js"></script>
+  <script src="../../src/js/layout.js"></script>
+  <script src="../../src/js/theme.js"></script>
+  <script src="../../src/js/navbar.js"></script>
+  <script src="../../src/js/ui.js"></script>
+  <script src="../../src/js/form-validation.js"></script>
+</body>
+</html>

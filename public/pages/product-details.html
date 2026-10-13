@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details — MARIS &amp; CATCH Seafood Purveyors</title>
+  <meta name="description" content="Detailed product information for MARIS & CATCH seafood including origin, harvest method, storage guidance, preparation options and related catch.">
+  <link rel="icon" type="image/png" href="../../assets/images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../src/css/style.css">
+  <link rel="stylesheet" href="../../src/css/pages.css">
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('maris-theme');
+        if (!t) { t = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'; }
+        if (t === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+        var d = localStorage.getItem('maris-dir');
+        if (d === 'rtl' || (!d && /^(ar|he|fa|ur|ps|sd)/i.test(navigator.language || ''))) document.documentElement.setAttribute('dir', 'rtl');
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <div id="site-navbar"></div>
+
+  <main>
+    <!-- 1. PAGE HERO -->
+    <section class="page-hero">
+      <div class="container page-hero-inner">
+        <nav class="breadcrumb"><a href="../../index.html">Home</a><span class="sep">/</span><a href="products.html">Products</a><span class="sep">/</span><span>Product Detail</span></nav>
+        <h1 class="page-hero-title">Fresh Catch, Fully Detailed</h1>
+        <p class="page-hero-sub">Everything you need to know about this item — where it was landed, how to store it, and how our fishmongers can prepare it for you.</p>
+      </div>
+    </section>
+
+    <!-- 2. DYNAMIC PRODUCT DETAIL -->
+    <section class="section" style="padding-top:64px;">
+      <div class="container" id="productDetailMount">
+        <noscript><p>Please enable JavaScript to view full product details.</p></noscript>
+      </div>
+    </section>
+
+    <!-- 3. FRESHNESS GUARANTEE -->
+    <section class="section section--ice">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">The MARIS Promise</span>
+          <h2 class="section-title">Freshness, Guaranteed</h2>
+        </div>
+        <div class="grid grid-3">
+          <div class="feature-card reveal"><div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg></div><h4>0°C–2°C Cold Chain</h4><p>Every item travels chilled in insulated packaging with a temperature logger.</p></div>
+          <div class="feature-card reveal"><div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg></div><h4>Traceability Card</h4><p>Vessel ID, landing time, and verified catch zone included with every order.</p></div>
+          <div class="feature-card reveal"><div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg></div><h4>Replace or Refund</h4><p>If any product falls below standard on arrival, we replace it or refund you.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. CTA -->
+    <section class="final-cta-section">
+      <img src="../../assets/images/seafood_feast.jpg" alt="Fresh seafood on crushed ice" class="cta-bg-image">
+      <div class="cta-overlay"></div>
+      <div class="container cta-content">
+        <span class="eyebrow eyebrow-light">LANDED DAILY • DELIVERED COLD</span>
+        <h2 class="cta-title">Stock Your Kitchen Today</h2>
+        <p class="cta-desc">Create an account to save favourites, track deliveries, and manage subscriptions in one place.</p>
+        <div class="cta-buttons">
+          <a href="../../public/auth/signup.html" class="btn btn-ocean">Get Started</a>
+          <a href="products.html" class="btn btn-outline-white">Browse All Products</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="../../src/js/data.js"></script>
+  <script src="../../src/js/layout.js"></script>
+  <script src="../../src/js/theme.js"></script>
+  <script src="../../src/js/navbar.js"></script>
+  <script src="../../src/js/ui.js"></script>
+  <script src="../../src/js/products.js"></script>
+  <script src="../../src/js/form-validation.js"></script>
+</body>
+</html>

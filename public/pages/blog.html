@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Journal &amp; Recipes — MARIS &amp; CATCH</title>
+  <meta name="description" content="Seafood guides, recipes, sustainability stories and behind-the-scenes articles from the MARIS & CATCH harbor team. Search and filter by category.">
+  <link rel="icon" type="image/png" href="../../assets/images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../src/css/style.css">
+  <link rel="stylesheet" href="../../src/css/pages.css">
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('maris-theme');
+        if (!t) { t = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'; }
+        if (t === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+        var d = localStorage.getItem('maris-dir');
+        if (d === 'rtl' || (!d && /^(ar|he|fa|ur|ps|sd)/i.test(navigator.language || ''))) document.documentElement.setAttribute('dir', 'rtl');
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <div id="site-navbar"></div>
+
+  <main>
+    <!-- 1. HERO -->
+    <section class="page-hero">
+      <div class="container page-hero-inner">
+        <nav class="breadcrumb"><a href="../../index.html">Home</a><span class="sep">/</span><span>Journal</span></nav>
+        <h1 class="page-hero-title">The MARIS Journal</h1>
+        <p class="page-hero-sub">Buying guides, recipes, sustainability deep-dives and stories from the quayside — written by the people who handle your catch every morning.</p>
+      </div>
+    </section>
+
+    <!-- 2. LIST + SEARCH + FILTER -->
+    <section class="section">
+      <div class="container">
+        <div class="blog-toolbar">
+          <div class="blog-search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            <input type="search" id="blogSearch" placeholder="Search articles, recipes, tags…" aria-label="Search articles">
+          </div>
+          <div class="blog-filters" id="blogFilters">
+            <button class="filter-tab active" data-blog-cat="All">All</button>
+            <button class="filter-tab" data-blog-cat="Guides">Guides</button>
+            <button class="filter-tab" data-blog-cat="Recipes">Recipes</button>
+            <button class="filter-tab" data-blog-cat="Sustainability">Sustainability</button>
+            <button class="filter-tab" data-blog-cat="Health">Health</button>
+            <button class="filter-tab" data-blog-cat="Behind the Scenes">Behind the Scenes</button>
+          </div>
+        </div>
+
+        <p class="blog-results-count" id="blogResultsCount">Loading articles…</p>
+        <div class="blog-grid" id="blogGrid"></div>
+        <div class="pagination" id="blogPagination"></div>
+      </div>
+    </section>
+
+    <!-- 3. EDITOR'S PICKS -->
+    <section class="section section--ice">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Editor’s Picks</span>
+          <h2 class="section-title">Start With These</h2>
+          <p class="lead-text">Hand-selected reads our fishmongers recommend to every new customer.</p>
+        </div>
+        <div class="grid grid-3">
+          <a class="feature-card reveal" href="blog-details.html?id=choose-fresh-fish" style="text-decoration:none;">
+            <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12c5-7 15-7 20 0-5 7-15 7-20 0z"></path></svg></div>
+            <h4>Choosing Fresh Fish</h4><p>The four checks professionals use before buying a single fillet.</p>
+          </a>
+          <a class="feature-card reveal" href="blog-details.html?id=salmon-cooking-guide" style="text-decoration:none;">
+            <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path></svg></div>
+            <h4>The Salmon Guide</h4><p>Pan-sear, roast, cure, or grill one fillet four ways.</p>
+          </a>
+          <a class="feature-card reveal" href="blog-details.html?id=sustainable-seafood" style="text-decoration:none;">
+            <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 20A7 7 0 0 1 4 13c0-6 8-11 16-11 0 8-5 16-11 16z"></path></svg></div>
+            <h4>Sustainable Seafood</h4><p>What the label really means, and how to read between the lines.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. NEWSLETTER -->
+    <section class="section">
+      <div class="container">
+        <div class="dash-card" style="max-width:760px;margin:0 auto;text-align:center;padding:48px;">
+          <span class="eyebrow">Never Miss a Landing</span>
+          <h2 class="section-title" style="font-size:1.9rem;">Fresh Stories in Your Inbox</h2>
+          <p class="lead-text" style="margin:0 auto 26px;">Weekly landing notes, recipes and seasonal catch alerts. No spam, unsubscribe anytime.</p>
+          <form id="newsletterForm" class="newsletter-field" style="max-width:440px;margin:0 auto;" novalidate>
+            <input type="email" id="newsletterEmail" name="email" placeholder="you@example.com" required>
+            <button type="submit" class="btn btn-ocean">Subscribe</button>
+          </form>
+          <span class="field-error" data-error-for="newsletterEmail" style="text-align:left;display:block;max-width:440px;margin:6px auto 0;"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. CTA -->
+    <section class="final-cta-section">
+      <img src="../../assets/images/fishing_boat.jpg" alt="Fishing boat at dawn" class="cta-bg-image">
+      <div class="cta-overlay"></div>
+      <div class="container cta-content">
+        <span class="eyebrow eyebrow-light">FROM SEA TO STORY</span>
+        <h2 class="cta-title">Read Less. Cook More.</h2>
+        <p class="cta-desc">Turn inspiration into dinner — browse today’s catch and have it delivered chilled.</p>
+        <div class="cta-buttons">
+          <a href="../../index.html#catch" class="btn btn-ocean">Shop Today’s Catch</a>
+          <a href="products.html" class="btn btn-outline-white">Explore Products</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="../../src/js/data.js"></script>
+  <script src="../../src/js/layout.js"></script>
+  <script src="../../src/js/theme.js"></script>
+  <script src="../../src/js/navbar.js"></script>
+  <script src="../../src/js/ui.js"></script>
+  <script src="../../src/js/blog.js"></script>
+  <script src="../../src/js/form-validation.js"></script>
+</body>
+</html>

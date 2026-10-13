@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing Plans — MARIS &amp; CATCH Seafood Purveyors</title>
+  <meta name="description" content="Simple, transparent seafood delivery plans. Compare Harbor (free), Tidal and Abyss memberships with monthly and annual billing options.">
+  <link rel="icon" type="image/png" href="../../assets/images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../src/css/style.css">
+  <link rel="stylesheet" href="../../src/css/pages.css">
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('maris-theme');
+        if (!t) { t = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'; }
+        if (t === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+        var d = localStorage.getItem('maris-dir');
+        if (d === 'rtl' || (!d && /^(ar|he|fa|ur|ps|sd)/i.test(navigator.language || ''))) document.documentElement.setAttribute('dir', 'rtl');
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <div id="site-navbar"></div>
+
+  <main>
+    <!-- 1. HERO -->
+    <section class="page-hero">
+      <div class="container page-hero-inner">
+        <nav class="breadcrumb"><a href="../../index.html">Home</a><span class="sep">/</span><span>Pricing</span></nav>
+        <h1 class="page-hero-title">Simple Plans, Honest Pricing</h1>
+        <p class="page-hero-sub">Start free and pay per order, or join a membership for unlimited delivery and subscriber savings. Cancel anytime — no contracts, ever.</p>
+      </div>
+    </section>
+
+    <!-- 2. PLANS + BILLING TOGGLE -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head" style="margin-bottom:34px;">
+          <span class="eyebrow">Membership Plans</span>
+          <h2 class="section-title">Choose Your Tide</h2>
+          <div class="billing-toggle" role="group" aria-label="Billing period">
+            <button type="button" class="active" data-billing="monthly">Monthly</button>
+            <button type="button" data-billing="annual">Annual</button>
+          </div>
+          <p style="margin-top:12px;font-size:.85rem;color:var(--text-muted);">Annual billing saves you <strong>two months free</strong>.</p>
+        </div>
+
+        <div class="pricing-grid">
+          <!-- Harbor -->
+          <div class="price-card reveal">
+            <div class="price-name">Harbor</div>
+            <div class="price-tagline">For occasional home cooks</div>
+            <div class="price-amount"><span class="currency">$</span><span data-price-monthly="0" data-price-annual="0">0</span></div>
+            <div class="price-period"><span data-period-monthly="forever">forever</span></div>
+            <ul class="price-features">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Pay-per-order pricing</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Same-day delivery over $75</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Standard preparation</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Email support</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Traceability card</span></li>
+            </ul>
+            <a href="../../public/auth/signup.html" class="btn btn-secondary">Start Free</a>
+          </div>
+
+          <!-- Tidal -->
+          <div class="price-card highlight reveal">
+            <span class="price-ribbon">Most Popular</span>
+            <div class="price-name">Tidal</div>
+            <div class="price-tagline">For regular home cooks</div>
+            <div class="price-amount"><span class="currency">$</span><span data-price-monthly="29" data-price-annual="24">29</span></div>
+            <div class="price-period"><span data-period-monthly="per month" data-period-annual="per month, billed annually">per month</span></div>
+            <ul class="price-features">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Unlimited free delivery</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Priority morning slots</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Custom butchery included</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Subscriber savings up to 12%</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Live order tracking</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Priority support</span></li>
+            </ul>
+            <a href="../../public/auth/signup.html" class="btn btn-ocean">Choose Tidal</a>
+          </div>
+
+          <!-- Abyss -->
+          <div class="price-card reveal">
+            <div class="price-name">Abyss</div>
+            <div class="price-tagline">For families &amp; entertainers</div>
+            <div class="price-amount"><span class="currency">$</span><span data-price-monthly="79" data-price-annual="66">79</span></div>
+            <div class="price-period"><span data-period-monthly="per month" data-period-annual="per month, billed annually">per month</span></div>
+            <ul class="price-features">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Everything in Tidal</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Two concurrent delivery routes</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Catering discounts up to 15%</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Dedicated concierge</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Sushi-grade access</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Quarterly sourcing report</span></li>
+            </ul>
+            <a href="../../public/auth/signup.html" class="btn btn-secondary">Go Abyss</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. COMPARISON TABLE -->
+    <section class="section section--ice">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Compare</span>
+          <h2 class="section-title">Plan Feature Comparison</h2>
+        </div>
+        <div class="dash-card table-wrap">
+          <table class="dash-table">
+            <thead>
+              <tr><th>Feature</th><th>Harbor</th><th>Tidal</th><th>Abyss</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Pay-per-order</td><td>✓</td><td>✓</td><td>✓</td></tr>
+              <tr><td>Free delivery</td><td>Over $75</td><td>Unlimited</td><td>Unlimited</td></tr>
+              <tr><td>Delivery windows</td><td>Standard</td><td>Priority</td><td>Priority ×2</td></tr>
+              <tr><td>Custom butchery</td><td>Paid add-on</td><td>Included</td><td>Included</td></tr>
+              <tr><td>Subscriber savings</td><td>—</td><td>Up to 12%</td><td>Up to 12%</td></tr>
+              <tr><td>Catering discount</td><td>—</td><td>8%</td><td>15%</td></tr>
+              <tr><td>Support</td><td>Email</td><td>Priority</td><td>Concierge</td></tr>
+              <tr><td>Monthly price</td><td>$0</td><td>$29</td><td>$79</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. FREE TRIAL / HIGHLIGHTS -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Risk Free</span>
+          <h2 class="section-title">Try Any Paid Plan for 14 Days</h2>
+          <p class="lead-text">Every membership includes a 14-day trial. If you cancel within the trial you pay nothing, and your first order always ships free.</p>
+        </div>
+        <div class="grid grid-4">
+          <div class="feature-card reveal"><div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg></div><h4>14-Day Trial</h4><p>Explore every membership benefit with no commitment.</p></div>
+          <div class="feature-card reveal"><div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg></div><h4>First Order Free</h4><p>New members receive free chilled delivery on their first box.</p></div>
+          <div class="feature-card reveal"><div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg></div><h4>Cancel Anytime</h4><p>One click in your dashboard — no calls, no penalties.</p></div>
+          <div class="feature-card reveal"><div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 12 2 2 4-4"></path><circle cx="12" cy="12" r="10"></circle></svg></div><h4>Freshness Guarantee</h4><p>If quality fails our inspection, we replace or refund instantly.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. PRICING FAQ -->
+    <section class="section section--ice-light">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Pricing Questions</span>
+          <h2 class="section-title">Frequently Asked</h2>
+        </div>
+        <div class="faq-accordion">
+          <div class="faq-item open">
+            <button class="faq-q" aria-expanded="true"><span>Is the Harbor plan really free?</span><span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg></span></button>
+            <div class="faq-a" style="max-height:260px;"><div class="faq-a-inner">Yes. Harbor is free forever with no monthly fee. You simply pay per order, and delivery is free once your basket exceeds $75.</div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>Can I switch plans later?</span><span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg></span></button>
+            <div class="faq-a"><div class="faq-a-inner">Absolutely. Upgrade or downgrade at any time from your User Dashboard. Changes take effect at your next billing cycle.</div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>What does annual billing include?</span><span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg></span></button>
+            <div class="faq-a"><div class="faq-a-inner">Annual billing locks in two months free. You pay for ten months and receive twelve of benefits, with the same cancellation flexibility.</div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>Do memberships cover catering?</span><span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg></span></button>
+            <div class="faq-a"><div class="faq-a-inner">Tidal members receive 8% off catering and Abyss members receive 15%. The catering team will apply the discount to any event quote.</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. CTA -->
+    <section class="final-cta-section">
+      <img src="../../assets/images/seafood_feast.jpg" alt="Seafood feast flatlay" class="cta-bg-image">
+      <div class="cta-overlay"></div>
+      <div class="container cta-content">
+        <span class="eyebrow eyebrow-light">NO CONTRACTS • CANCEL ANYTIME</span>
+        <h2 class="cta-title">Start Your 14-Day Trial Today</h2>
+        <p class="cta-desc">Join thousands of kitchens that made fresh seafood a weekly habit.</p>
+        <div class="cta-buttons">
+          <a href="../../public/auth/signup.html" class="btn btn-ocean">Create Free Account</a>
+          <a href="contact.html" class="btn btn-outline-white">Ask a Question</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="../../src/js/data.js"></script>
+  <script src="../../src/js/layout.js"></script>
+  <script src="../../src/js/theme.js"></script>
+  <script src="../../src/js/navbar.js"></script>
+  <script src="../../src/js/ui.js"></script>
+  <script src="../../src/js/form-validation.js"></script>
+</body>
+</html>

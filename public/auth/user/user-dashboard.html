@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Dashboard — MARIS &amp; CATCH</title>
+  <meta name="description" content="Track your MARIS & CATCH orders, manage your subscription, saved addresses and payment methods from your personal dashboard.">
+  <link rel="icon" type="image/png" href="../../../assets/images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../../src/css/style.css">
+  <link rel="stylesheet" href="../../../src/css/pages.css">
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('maris-theme');
+        if (!t) { t = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'; }
+        if (t === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+        var d = localStorage.getItem('maris-dir');
+        if (d === 'rtl' || (!d && /^(ar|he|fa|ur|ps|sd)/i.test(navigator.language || ''))) document.documentElement.setAttribute('dir', 'rtl');
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <div id="site-navbar"></div>
+
+  <main class="dash-wrap">
+    <div class="container-wide">
+      <div class="dash-shell">
+        <!-- SIDEBAR -->
+        <aside class="dash-sidebar">
+          <div class="dash-sidebar-head">
+            <span class="dash-badge">Member</span>
+            <h3>My Harbor</h3>
+            <p>Tidal Plan · Member since 2024</p>
+          </div>
+          <nav class="dash-nav" aria-label="Account sections">
+            <a href="#" class="active" data-dash-target="overview"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="9"></rect><rect x="14" y="3" width="7" height="5"></rect><rect x="14" y="12" width="7" height="9"></rect><rect x="3" y="16" width="7" height="5"></rect></svg> Overview</a>
+            <a href="#" data-dash-target="orders"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg> My Orders</a>
+            <a href="#" data-dash-target="subscription"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4-8 3v10l7 4z"></path></svg> Subscription</a>
+            <a href="#" data-dash-target="addresses"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Addresses</a>
+            <a href="#" data-dash-target="payments"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line></svg> Payments</a>
+            <a href="#" data-dash-target="settings"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.6a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg> Settings</a>
+          </nav>
+          <a href="../../../index.html#catch" class="btn btn-ocean btn-sm dash-sidebar-cta">Shop Today’s Catch</a>
+        </aside>
+
+        <!-- MAIN -->
+        <section class="dash-main">
+          <div class="dash-topbar">
+            <div>
+              <h1 class="dash-title" id="dashPageTitle">Overview</h1>
+              <p class="dash-sub">Hello Sarah — your next box is out for delivery.</p>
+            </div>
+            <div class="dash-topbar-actions">
+              <div class="dash-who">
+                <span class="author-avatar">SK</span>
+                <div><span>Sarah K.</span><small>Tidal member</small></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- OVERVIEW -->
+          <div class="dash-panel" data-dash-panel="overview">
+            <div class="stat-cards" data-panel-title="Overview">
+              <div class="stat-card"><span class="stat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4-8 3v10l7 4z"></path></svg></span><div><span class="stat-label">Active Subscription</span><span class="stat-value">Couple · Weekly</span><span class="stat-delta">Next box: Friday</span></div></div>
+              <div class="stat-card"><span class="stat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path></svg></span><div><span class="stat-label">Total Orders</span><span class="stat-value">74</span><span class="stat-delta up">Lifetime member</span></div></div>
+              <div class="stat-card"><span class="stat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg></span><div><span class="stat-label">Member Savings</span><span class="stat-value">$1,248</span><span class="stat-delta up">Since joining</span></div></div>
+              <div class="stat-card"><span class="stat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></span><div><span class="stat-label">Next Delivery</span><span class="stat-value">Today 16:30</span><span class="stat-delta up">Out for delivery</span></div></div>
+            </div>
+
+            <div class="dash-grid">
+              <div class="dash-card">
+                <div class="dash-card-head"><h3>Delivery Status</h3><span class="pill pill-info">Out for delivery</span></div>
+                <ul class="timeline" style="margin-top:6px;">
+                  <li class="timeline-item"><span class="timeline-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg></span><div class="timeline-content"><h6>Order confirmed</h6><span>Today, 09:12</span></div></li>
+                  <li class="timeline-item"><span class="timeline-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg></span><div class="timeline-content"><h6>Packed &amp; chilled</h6><span>Today, 12:40</span></div></li>
+                  <li class="timeline-item"><span class="timeline-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle></svg></span><div class="timeline-content"><h6>Out for delivery</h6><span>Today, 15:05 · ETA 16:30</span></div></li>
+                </ul>
+              </div>
+              <div class="dash-card">
+                <div class="dash-card-head"><h3>Your Last Box</h3></div>
+                <ul class="dash-list">
+                  <li><span>Atlantic Salmon Fillet</span><strong>2 × 250g</strong></li>
+                  <li><span>Tiger Prawns</span><strong>1 × 500g</strong></li>
+                  <li><span>Line-Caught Sea Bass</span><strong>2 portions</strong></li>
+                  <li><span>Lemons &amp; herbs</span><strong>1 kit</strong></li>
+                </ul>
+                <p class="dash-muted" style="margin-top:14px;">Traceability card included with this box.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- ORDERS -->
+          <div class="dash-panel" data-dash-panel="orders" style="display:none;">
+            <div class="dash-card" data-panel-title="My Orders">
+              <div class="dash-card-head"><h3>Order History</h3></div>
+              <div class="table-wrap">
+                <table class="dash-table">
+                  <thead><tr><th>Order</th><th>Date</th><th>Items</th><th>Total</th><th>Status</th><th></th></tr></thead>
+                  <tbody>
+                    <tr><td>#MC-4821</td><td>Oct 13, 2026</td><td>6</td><td>$128.40</td><td><span class="pill pill-info">Out for delivery</span></td><td><button class="btn btn-secondary btn-xs" data-demo-action="Opening order #MC-4821 (demo).">View</button></td></tr>
+                    <tr><td>#MC-4790</td><td>Oct 6, 2026</td><td>5</td><td>$112.00</td><td><span class="pill pill-ok">Delivered</span></td><td><button class="btn btn-secondary btn-xs" data-demo-action="Reordered #MC-4790 (demo).">Reorder</button></td></tr>
+                    <tr><td>#MC-4752</td><td>Sep 29, 2026</td><td>4</td><td>$96.30</td><td><span class="pill pill-ok">Delivered</span></td><td><button class="btn btn-secondary btn-xs" data-demo-action="Reordered #MC-4752 (demo).">Reorder</button></td></tr>
+                    <tr><td>#MC-4711</td><td>Sep 22, 2026</td><td>7</td><td>$148.90</td><td><span class="pill pill-ok">Delivered</span></td><td><button class="btn btn-secondary btn-xs" data-demo-action="Reordered #MC-4711 (demo).">Reorder</button></td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <!-- SUBSCRIPTION -->
+          <div class="dash-panel" data-dash-panel="subscription" style="display:none;">
+            <div class="dash-grid" data-panel-title="Subscription">
+              <div class="dash-card">
+                <div class="dash-card-head"><h3>Couple Box · Weekly</h3><span class="pill pill-ok">Active</span></div>
+                <p class="dash-muted">$69 per box, delivered every Friday morning. Pause, skip or change your plan anytime.</p>
+                <ul class="dash-list" style="margin-top:16px;">
+                  <li><span>Ships every</span><strong>Friday</strong></li>
+                  <li><span>Next dispatch</span><strong>Oct 16, 2026</strong></li>
+                  <li><span>Payment</span><strong>•••• 4242</strong></li>
+                </ul>
+                <div class="flex-wrap" style="margin-top:18px;">
+                  <button class="btn btn-secondary btn-sm" data-demo-action="Subscription paused (demo).">Pause</button>
+                  <button class="btn btn-secondary btn-sm" data-demo-action="This week's box skipped (demo).">Skip This Week</button>
+                  <a href="../pages/pricing.html" class="btn btn-ocean btn-sm">Change Plan</a>
+                </div>
+              </div>
+              <div class="dash-card">
+                <div class="dash-card-head"><h3>Box Preferences</h3></div>
+                <ul class="dash-list">
+                  <li><span>Favourite</span><strong>Salmon, Prawns</strong></li>
+                  <li><span>Disliked</span><strong>Anchovies</strong></li>
+                  <li><span>Allergies</span><strong>None recorded</strong></li>
+                  <li><span>Portion size</span><strong>2 people</strong></li>
+                </ul>
+                <button class="btn btn-secondary btn-sm" style="margin-top:16px;" data-demo-action="Preferences editor opened (demo).">Edit Preferences</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- ADDRESSES -->
+          <div class="dash-panel" data-dash-panel="addresses" style="display:none;">
+            <div class="dash-card" data-panel-title="Addresses">
+              <div class="dash-card-head"><h3>Saved Addresses</h3><button class="btn btn-ocean btn-sm" data-demo-action="New address form opened (demo).">Add Address</button></div>
+              <div class="dash-grid">
+                <div class="address-card"><span class="pill pill-info">Default</span><h4>Home</h4><p>128 Harbour View Road, Apt 4<br>Seaside District, SB 20418</p><p class="dash-muted">+1 (800) 428-3474</p></div>
+                <div class="address-card"><h4>Work</h4><p>Coastal Terminal 2, Level 3<br>Harbor Basin, SB 20402</p><p class="dash-muted">+1 (800) 428-3475</p></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PAYMENTS -->
+          <div class="dash-panel" data-dash-panel="payments" style="display:none;">
+            <div class="dash-card" data-panel-title="Payments">
+              <div class="dash-card-head"><h3>Payment Methods</h3><button class="btn btn-ocean btn-sm" data-demo-action="Add card form opened (demo).">Add Card</button></div>
+              <ul class="dash-list payment-list">
+                <li><span>Visa •••• 4242 <span class="pill pill-info">Default</span></span><strong>Exp 08/28</strong></li>
+                <li><span>Mastercard •••• 8123</span><strong>Exp 02/27</strong></li>
+              </ul>
+              <p class="dash-muted" style="margin-top:14px;">Cards are tokenised by our PCI-compliant payment partner. MARIS &amp; CATCH never stores raw card numbers.</p>
+            </div>
+          </div>
+
+          <!-- SETTINGS -->
+          <div class="dash-panel" data-dash-panel="settings" style="display:none;">
+            <div class="dash-card" data-panel-title="Settings">
+              <div class="dash-card-head"><h3>Account Preferences</h3></div>
+              <div class="dash-settings">
+                <label class="switch-row"><span><strong>Email order updates</strong><small>Dispatch alerts and delivery confirmations.</small></span><input type="checkbox" checked></label>
+                <label class="switch-row"><span><strong>Weekly catch newsletter</strong><small>Landing notes, recipes and seasonal offers.</small></span><input type="checkbox" checked></label>
+                <label class="switch-row"><span><strong>SMS delivery alerts</strong><small>Text me when the driver is 10 minutes away.</small></span><input type="checkbox"></label>
+                <label class="switch-row"><span><strong>Member-only drops</strong><small>Early access to rare landings.</small></span><input type="checkbox" checked></label>
+              </div>
+              <button class="btn btn-ocean btn-sm" data-demo-action="Preferences saved (demo).">Save Preferences</button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="../../../src/js/data.js"></script>
+  <script src="../../../src/js/layout.js"></script>
+  <script src="../../../src/js/theme.js"></script>
+  <script src="../../../src/js/navbar.js"></script>
+  <script src="../../../src/js/ui.js"></script>
+  <script src="../../../src/js/dashboard.js"></script>
+  <script src="../../../src/js/form-validation.js"></script>
+</body>
+</html>

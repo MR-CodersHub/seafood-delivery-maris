@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Service Details — MARIS &amp; CATCH Seafood Purveyors</title>
+  <meta name="description" content="Detailed information about MARIS & CATCH seafood services including features, process, pricing tiers and frequently asked questions.">
+  <link rel="icon" type="image/png" href="../../assets/images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../src/css/style.css">
+  <link rel="stylesheet" href="../../src/css/pages.css">
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('maris-theme');
+        if (!t) { t = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'; }
+        if (t === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+        var d = localStorage.getItem('maris-dir');
+        if (d === 'rtl' || (!d && /^(ar|he|fa|ur|ps|sd)/i.test(navigator.language || ''))) document.documentElement.setAttribute('dir', 'rtl');
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <div id="site-navbar"></div>
+
+  <main>
+    <!-- Dynamic service detail (hero, overview, features, process, pricing, FAQs, related) -->
+    <section class="section" style="padding-top:calc(var(--header-height) + 60px);">
+      <div class="container" id="serviceDetailMount">
+        <noscript><p>Please enable JavaScript to view full service details.</p></noscript>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="final-cta-section">
+      <img src="../../assets/images/mackerel_navy.jpg" alt="Fresh fish on crushed ice" class="cta-bg-image">
+      <div class="cta-overlay"></div>
+      <div class="container cta-content">
+        <span class="eyebrow eyebrow-light">READY WHEN YOU ARE</span>
+        <h2 class="cta-title">Let’s Build Your Perfect Order</h2>
+        <p class="cta-desc">Create an account to save preferences, track deliveries, and manage subscriptions in one place.</p>
+        <div class="cta-buttons">
+          <a href="../../public/auth/signup.html" class="btn btn-ocean">Get Started</a>
+          <a href="products.html" class="btn btn-outline-white">Browse All Products</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="../../src/js/data.js"></script>
+  <script src="../../src/js/layout.js"></script>
+  <script src="../../src/js/theme.js"></script>
+  <script src="../../src/js/navbar.js"></script>
+  <script src="../../src/js/ui.js"></script>
+  <script src="../../src/js/services.js"></script>
+  <script src="../../src/js/form-validation.js"></script>
+</body>
+</html>

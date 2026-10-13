@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ — MARIS &amp; CATCH Seafood Purveyors</title>
+  <meta name="description" content="Answers to the most common questions about ordering, delivery, storage, subscriptions, sustainability and returns at MARIS & CATCH.">
+  <link rel="icon" type="image/png" href="../../assets/images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../src/css/style.css">
+  <link rel="stylesheet" href="../../src/css/pages.css">
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('maris-theme');
+        if (!t) { t = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'; }
+        if (t === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+        var d = localStorage.getItem('maris-dir');
+        if (d === 'rtl' || (!d && /^(ar|he|fa|ur|ps|sd)/i.test(navigator.language || ''))) document.documentElement.setAttribute('dir', 'rtl');
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <div id="site-navbar"></div>
+
+  <main>
+    <!-- 1. HERO -->
+    <section class="page-hero">
+      <div class="container page-hero-inner">
+        <nav class="breadcrumb"><a href="../../index.html">Home</a><span class="sep">/</span><span>FAQ</span></nav>
+        <h1 class="page-hero-title">How Can We Help?</h1>
+        <p class="page-hero-sub">Everything you need to know about ordering, delivery, storage, subscriptions and sustainability — answered in one place.</p>
+      </div>
+    </section>
+
+    <!-- 2. FILTER + ACCORDION -->
+    <section class="section">
+      <div class="container container--narrow">
+        <div class="faq-filter" id="faqFilter">
+          <button class="filter-tab active" data-faq-cat="All">All</button>
+          <button class="filter-tab" data-faq-cat="Orders">Orders</button>
+          <button class="filter-tab" data-faq-cat="Delivery">Delivery</button>
+          <button class="filter-tab" data-faq-cat="Storage">Storage</button>
+          <button class="filter-tab" data-faq-cat="Subscriptions">Subscriptions</button>
+          <button class="filter-tab" data-faq-cat="Sustainability">Sustainability</button>
+        </div>
+
+        <div class="faq-accordion" id="faqList">
+          <!-- Orders -->
+          <div class="faq-item" data-faq-item data-cat="Orders">
+            <button class="faq-q" aria-expanded="false"><span>How do I place an order?</span><span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg></span></button>
+            <div class="faq-a"><div class="faq-a-inner">Browse today’s catch, add items to your cart, and check out in under two minutes. You can order as a guest or create a free Harbor account to track history and save favourites.</div></div>
+          </div>
+          <div class="faq-item" data-faq-item data-cat="Orders">
+            <button class="faq-q" aria-expanded="false"><span>Can I change or cancel an order after placing it?</span><span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg></span></button>
+            <div class="faq-a"><div class="faq-a-inner">Yes, up until your cut-off time — usually 16:00 the day before delivery. Head to your User Dashboard and edit the order, or contact our care team and we will adjust it for you.</div></div>
+          </div>
+          <div class="faq-item" data-faq-item data-cat="Orders">
+            <button class="faq-q" aria-expanded="false"><span>What payment methods do you accept?</span><span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg></span></button>
+            <div class="faq-a"><div class="faq-a-inner">All major debit and credit cards, digital wallets, and bank transfer for catering invoices. Payment is captured at checkout — we never store raw card data.</div></div>
+          </div>
+
+          <!-- Delivery -->
+          <div class="faq-item" data-faq-item data-cat="Delivery">
+            <button class="faq-q" aria-expanded="false"><span>Where do you deliver and how fast?</span><span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg></span></button>
+            <div class="faq-a"><div class="faq-a-inner">We deliver across the metro coastal region within two hours of dispatch, and next-day to surrounding districts. Enter your postcode at checkout to see exact windows.</div></div>
+          </div>
+          <div class="faq-item" data-faq-item data-cat="Delivery">
+            <button class="faq-q" aria-expanded="false"><span>How is the fish kept cold in transit?</span><span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg></span></button>
+            <div class="faq-a"><div class="faq-a-inner">Every box ships in insulated packaging with food-grade gel packs and, for longer routes, telemetry-tracked refrigeration held between 0°C and 2°C. The cold chain is continuous from dock to doorstep.</div></div>
+          </div>
+          <div class="faq-item" data-faq-item data-cat="Delivery">
+            <button class="faq-q" aria-expanded="false"><span>What if I miss my delivery window?</span><span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg></span></button>
+            <div class="faq-a"><div class="faq-a-inner">Our driver will attempt contact and, where possible, leave the box in a sheltered spot. If it cannot be delivered safely we re-schedule the next available window at no extra cost.</div></div>
+          </div>
+
+          <!-- Storage -->
+          <div class="faq-item" data-faq-item data-cat="Storage">
+            <button class="faq-q" aria-expanded="false"><span>How long does fresh seafood keep at home?</span><span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg></span></button>
+            <div class="faq-a"><div class="faq-a-inner">Fresh items are best within 1–2 days in the coldest part of your fridge. For longer storage, freeze on arrival — most fillets keep up to 3 months when vacuum-sealed and held at −18°C or below.</div></div>
+          </div>
+          <div class="faq-item" data-faq-item data-cat="Storage">
+            <button class="faq-q" aria-expanded="false"><span>How should I defrost fish safely?</span><span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg></span></button>
+            <div class="faq-a"><div class="faq-a-inner">Move it to the fridge the night before — slow thawing preserves texture. If short on time, seal it and submerge in cold water. Never defrost on the counter at room temperature.</div></div>
+          </div>
+
+          <!-- Subscriptions -->
+          <div class="faq-item" data-faq-item data-cat="Subscriptions">
+            <button class="faq-q" aria-expanded="false"><span>How do weekly boxes work?</span><span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg></span></button>
+            <div class="faq-a"><div class="faq-a-inner">Choose a size and frequency, and we build a box from the freshest catch of the week. You can pause, swap, or skip any delivery from your dashboard up to 48 hours before it ships.</div></div>
+          </div>
+          <div class="faq-item" data-faq-item data-cat="Subscriptions">
+            <button class="faq-q" aria-expanded="false"><span>Can I pause or cancel my membership?</span><span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg></span></button>
+            <div class="faq-a"><div class="faq-a-inner">Yes — pause for up to eight weeks or cancel at any time in one click. No phone call required and no cancellation fees, ever.</div></div>
+          </div>
+
+          <!-- Sustainability -->
+          <div class="faq-item" data-faq-item data-cat="Sustainability">
+            <button class="faq-q" aria-expanded="false"><span>Is your seafood sustainably sourced?</span><span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg></span></button>
+            <div class="faq-a"><div class="faq-a-inner">We prioritise day-boat catches, certified fisheries and responsibly farmed species. Every product page lists its source, catch method and certification so you can choose with confidence.</div></div>
+          </div>
+          <div class="faq-item" data-faq-item data-cat="Sustainability">
+            <button class="faq-q" aria-expanded="false"><span>What does the traceability card tell me?</span><span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg></span></button>
+            <div class="faq-a"><div class="faq-a-inner">It names the boat, the crew, the landing date and the water it came from. Scan the code to see that journey from catch to your kitchen.</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. STILL NEED HELP -->
+    <section class="section section--ice">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Didn’t Find It?</span>
+          <h2 class="section-title">We’re Always One Message Away</h2>
+          <p class="lead-text">Our harbor care team is made up of real fishmongers and logistics specialists — not scripts.</p>
+        </div>
+        <div class="grid grid-3">
+          <a class="feature-card reveal" href="contact.html" style="text-decoration:none;">
+            <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg></div>
+            <h4>Contact Support</h4><p>Send us a message and we will reply within one business day.</p>
+          </a>
+          <a class="feature-card reveal" href="tel:+18004283374" style="text-decoration:none;">
+            <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg></div>
+            <h4>Call the Harbor</h4><p>+1 (800) 428-FISH — open Monday to Saturday, 05:00–19:00.</p>
+          </a>
+          <a class="feature-card reveal" href="products.html" style="text-decoration:none;">
+            <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4-8 3v10l7 4z"></path></svg></div>
+            <h4>Our Products</h4><p>Explore fresh fish, shellfish, fillets and platters.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. CTA -->
+    <section class="final-cta-section">
+      <img src="../../assets/images/freshwater_trout.jpg" alt="Fresh trout on ice" class="cta-bg-image">
+      <div class="cta-overlay"></div>
+      <div class="container cta-content">
+        <span class="eyebrow eyebrow-light">STILL CURIOUS?</span>
+        <h2 class="cta-title">Let’s Get You Cooking</h2>
+        <p class="cta-desc">Browse the catch or reach out — we are happy to help either way.</p>
+        <div class="cta-buttons">
+          <a href="../../index.html#catch" class="btn btn-ocean">Shop Today’s Catch</a>
+          <a href="contact.html" class="btn btn-outline-white">Contact Us</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="../../src/js/data.js"></script>
+  <script src="../../src/js/layout.js"></script>
+  <script src="../../src/js/theme.js"></script>
+  <script src="../../src/js/navbar.js"></script>
+  <script src="../../src/js/ui.js"></script>
+  <script src="../../src/js/form-validation.js"></script>
+</body>
+</html>

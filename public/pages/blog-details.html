@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Article — MARIS &amp; CATCH Journal</title>
+  <meta name="description" content="Read the full article from the MARIS & CATCH journal — seafood guides, recipes, sustainability and behind-the-scenes stories.">
+  <link rel="icon" type="image/png" href="../../assets/images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../src/css/style.css">
+  <link rel="stylesheet" href="../../src/css/pages.css">
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('maris-theme');
+        if (!t) { t = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'; }
+        if (t === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+        var d = localStorage.getItem('maris-dir');
+        if (d === 'rtl' || (!d && /^(ar|he|fa|ur|ps|sd)/i.test(navigator.language || ''))) document.documentElement.setAttribute('dir', 'rtl');
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <div id="site-navbar"></div>
+
+  <main>
+    <!-- Dynamic article + sidebar rendered from ?id= -->
+    <section class="section" style="padding-top:calc(var(--header-height) + 56px);">
+      <div class="container" id="blogDetailMount">
+        <noscript><p>Please enable JavaScript to read this article.</p></noscript>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="final-cta-section">
+      <img src="../../assets/images/mackerel_navy.jpg" alt="Fresh mackerel on ice" class="cta-bg-image">
+      <div class="cta-overlay"></div>
+      <div class="container cta-content">
+        <span class="eyebrow eyebrow-light">HUNGRY YET?</span>
+        <h2 class="cta-title">Shop the Catch Behind the Story</h2>
+        <p class="cta-desc">Everything you read about is landed daily and delivered chilled to your door.</p>
+        <div class="cta-buttons">
+          <a href="../../index.html#catch" class="btn btn-ocean">Shop Today’s Catch</a>
+          <a href="blog.html" class="btn btn-outline-white">More Articles</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="../../src/js/data.js"></script>
+  <script src="../../src/js/layout.js"></script>
+  <script src="../../src/js/theme.js"></script>
+  <script src="../../src/js/navbar.js"></script>
+  <script src="../../src/js/ui.js"></script>
+  <script src="../../src/js/blog.js"></script>
+  <script src="../../src/js/form-validation.js"></script>
+</body>
+</html>

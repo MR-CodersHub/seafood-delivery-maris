@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login — MARIS &amp; CATCH</title>
+  <meta name="description" content="Sign in to your MARIS & CATCH account to track orders, manage subscriptions and access exclusive catches.">
+  <link rel="icon" type="image/png" href="../../assets/images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../src/css/style.css">
+  <link rel="stylesheet" href="../../src/css/pages.css">
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('maris-theme');
+        if (!t) { t = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'; }
+        if (t === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+        var d = localStorage.getItem('maris-dir');
+        if (d === 'rtl' || (!d && /^(ar|he|fa|ur|ps|sd)/i.test(navigator.language || ''))) document.documentElement.setAttribute('dir', 'rtl');
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <div id="site-navbar"></div>
+
+  <main>
+    <!-- 1. AUTH SPLIT -->
+    <section class="auth-section">
+      <div class="container">
+        <div class="auth-split">
+          <div class="auth-aside">
+            <span class="eyebrow eyebrow-light">Welcome Back</span>
+            <h2 class="auth-aside-title">Your Catch Is Waiting</h2>
+            <p class="auth-aside-text">Sign in to track live deliveries, manage your subscription, and reorder your favourites in one tap.</p>
+            <ul class="check-list check-list--light">
+              <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg></span><span>Live order tracking</span></li>
+              <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg></span><span>One-tap reordering</span></li>
+              <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg></span><span>Subscriber-only prices</span></li>
+            </ul>
+            <div class="auth-aside-quote">
+              <p>“Ordering is effortless and the fish is flawless every single week.”</p>
+              <span>— Lena Novak, Family Feast subscriber</span>
+            </div>
+          </div>
+
+          <div class="auth-card">
+            <div class="auth-logo">
+              <div class="logo-symbol"><img src="../../assets/images/logo.png" alt="MARIS logo"></div>
+              <span>MARIS &amp; CATCH</span>
+            </div>
+            <h1 class="auth-title">Sign In</h1>
+            <p class="auth-sub">New to MARIS? <a href="signup.html">Create an account</a></p>
+
+            <form id="loginForm" novalidate>
+              <div class="form-group">
+                <label for="loginEmail">Email Address</label>
+                <input class="form-control" type="email" id="loginEmail" name="email" placeholder="you@example.com" required>
+                <span class="field-error" data-error-for="loginEmail"></span>
+              </div>
+              <div class="form-group">
+                <label for="loginPassword">Password</label>
+                <div class="password-field">
+                  <input class="form-control" type="password" id="loginPassword" name="password" placeholder="Enter your password" required>
+                  <button type="button" class="password-toggle" data-toggle-password="loginPassword">Show</button>
+                </div>
+                <span class="field-error" data-error-for="loginPassword"></span>
+              </div>
+              <div class="form-between">
+                <label class="checkbox-row" for="rememberMe"><input type="checkbox" id="rememberMe" name="remember"><span>Remember me</span></label>
+                <a href="login.html" style="color:var(--blue-ocean);font-size:.86rem;">Forgot password?</a>
+              </div>
+              <button type="submit" class="btn btn-ocean w-100">Sign In</button>
+            </form>
+
+            <div class="auth-divider"><span>or continue with</span></div>
+            <div class="social-login">
+              <button type="button" class="social-btn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.5 9.9v-7H8v-2.9h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.4h-1.2c-1.2 0-1.6.8-1.6 1.6v1.9H16l-.4 2.9h-2.1v7A10 10 0 0 0 22 12z"></path></svg> Google</button>
+              <button type="button" class="social-btn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.4 12.9c0-2.2 1.8-3.3 1.9-3.3-1-1.5-2.6-1.7-3.2-1.7-1.4-.1-2.6.8-3.3.8-.7 0-1.7-.8-2.8-.8-1.4 0-2.7.8-3.5 2.1-1.5 2.6-.4 6.4 1 8.5.7 1 1.5 2.1 2.6 2.1 1 0 1.4-.6 2.6-.6 1.2 0 1.5.6 2.6.6 1.1 0 1.8-1 2.5-2 .8-1.2 1.1-2.3 1.1-2.4-.1 0-2.1-.8-2.1-3.3zM14.4 6.3c.6-.7 1-1.6.9-2.6-.9 0-1.9.6-2.5 1.3-.5.6-1 1.6-.9 2.5 1 .1 1.9-.5 2.5-1.2z"></path></svg> Apple</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. BENEFITS -->
+    <section class="section section--ice">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Member Benefits</span>
+          <h2 class="section-title">Why Sign In?</h2>
+        </div>
+        <div class="grid grid-3">
+          <div class="feature-card reveal"><div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></div><h4>Faster Checkout</h4><p>Saved addresses and payment methods make reordering a two-tap affair.</p></div>
+          <div class="feature-card reveal"><div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg></div><h4>Order Protection</h4><p>Full order history and freshness guarantees, all in one dashboard.</p></div>
+          <div class="feature-card reveal"><div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 12v10H4V12M2 7h20v5H2zM12 22V7"></path></svg></div><h4>Exclusive Drops</h4><p>Early access to rare landings and member-only pricing.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. TRUST STRIP -->
+    <section class="section section--tight section--navy">
+      <div class="container">
+        <div class="stat-strip">
+          <div class="strip-item"><div class="strip-value">0°C–2°C</div><div class="strip-label">Certified Cold Chain</div></div>
+          <div class="strip-item"><div class="strip-value">FDA &amp; HACCP</div><div class="strip-label">Food Safety Standards</div></div>
+          <div class="strip-item"><div class="strip-value">45+</div><div class="strip-label">Day-Boat Partners</div></div>
+          <div class="strip-item"><div class="strip-value">100%</div><div class="strip-label">Traceable Sourcing</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. TESTIMONIAL -->
+    <section class="section">
+      <div class="container container--narrow">
+        <div class="dash-card" style="text-align:center;padding:48px;">
+          <div class="rating-stars" style="justify-content:center;">★★★★★</div>
+          <p style="font-size:1.2rem;font-style:italic;color:var(--navy-deep);line-height:1.6;margin:14px 0 18px;">“Signing up was the best kitchen decision I’ve made. Fresh fish, zero stress, and my account keeps everything in order.”</p>
+          <div class="blog-author-mini" style="justify-content:center;"><span class="author-avatar">JB</span><span>Josh Bennett — member since 2023</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. CTA -->
+    <section class="final-cta-section">
+      <img src="../../assets/images/mackerel_navy.jpg" alt="Fresh mackerel" class="cta-bg-image">
+      <div class="cta-overlay"></div>
+      <div class="container cta-content">
+        <span class="eyebrow eyebrow-light">NEW HERE?</span>
+        <h2 class="cta-title">Create Your Free Account</h2>
+        <p class="cta-desc">Join in under a minute and get free delivery on your first order.</p>
+        <div class="cta-buttons"><a href="signup.html" class="btn btn-ocean">Sign Up Free</a><a href="../../index.html#catch" class="btn btn-outline-white">Browse the Catch</a></div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="../../src/js/data.js"></script>
+  <script src="../../src/js/layout.js"></script>
+  <script src="../../src/js/theme.js"></script>
+  <script src="../../src/js/navbar.js"></script>
+  <script src="../../src/js/ui.js"></script>
+  <script src="../../src/js/form-validation.js"></script>
+</body>
+</html>
