@@ -48,21 +48,11 @@ window.MARIS = window.MARIS || {};
 
       '    <nav class="nav-menu" aria-label="Main Navigation">' +
       navItem(U('index.html'), 'Home', 'home') +
-      '      <div class="nav-dropdown">' +
-      '        <button class="nav-link nav-drop-toggle" aria-expanded="false">Pages ' + icons.chevron + '</button>' +
-      '        <div class="dropdown-panel">' +
-      '          <a href="' + U('index.html') + '">Home — General Landing</a>' +
-      '          <a href="' + U('public/pages/home-2.html') + '">Home — Niche Landing</a>' +
-      '          <a href="' + U('public/pages/about.html') + '">About Us</a>' +
-      '          <a href="' + U('public/pages/pricing.html') + '">Pricing Plans</a>' +
-      '          <a href="' + U('public/pages/FAQ.html') + '">FAQs</a>' +
-      '          <a href="' + U('public/pages/coming-soon.html') + '">Coming Soon</a>' +
-      '        </div>' +
-      '      </div>' +
+      navItem(U('public/pages/home-2.html'), 'Home 2', 'home-2') +
+      navItem(U('public/pages/about.html'), 'About', 'about') +
       navItem(U('public/pages/products.html'), 'Products', 'products') +
       navItem(U('public/pages/blog.html'), 'Blog', 'blog') +
       navItem(U('public/pages/pricing.html'), 'Pricing', 'pricing') +
-      navItem(U('public/pages/about.html'), 'About', 'about') +
       navItem(U('public/pages/contact.html'), 'Contact', 'contact') +
       '    </nav>' +
 

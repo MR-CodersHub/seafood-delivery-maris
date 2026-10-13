@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Weekly Catch Boxes — MARIS &amp; CATCH Subscriptions</title>
-  <meta name="description" content="Build your custom seafood subscription box. Choose a size and frequency, get the freshest catch of the week delivered chilled, and pause or skip anytime.">
+  <meta name="description"
+    content="Build your custom seafood subscription box. Choose a size and frequency, get the freshest catch of the week delivered chilled, and pause or skip anytime.">
   <link rel="icon" type="image/png" href="../../assets/images/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="../../src/css/style.css">
   <link rel="stylesheet" href="../../src/css/pages.css">
   <script>
@@ -19,10 +23,11 @@
         if (t === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
         var d = localStorage.getItem('maris-dir');
         if (d === 'rtl' || (!d && /^(ar|he|fa|ur|ps|sd)/i.test(navigator.language || ''))) document.documentElement.setAttribute('dir', 'rtl');
-      } catch (e) {}
+      } catch (e) { }
     })();
   </script>
 </head>
+
 <body>
   <div id="site-navbar"></div>
 
@@ -31,25 +36,19 @@
     <section class="page-hero page-hero--split">
       <div class="container page-hero-split">
         <div class="page-hero-inner" style="text-align:left;">
-          <nav class="breadcrumb"><a href="../../index.html">Home</a><span class="sep">/</span><span>Weekly Catch Boxes</span></nav>
+          <nav class="breadcrumb"><a href="../../index.html">Home</a><span class="sep">/</span><span>Weekly Catch
+              Boxes</span></nav>
           <span class="eyebrow">The MARIS Subscription</span>
           <h1 class="page-hero-title">Never Plan Dinner Again</h1>
-          <p class="page-hero-sub">Tell us how many you feed and how often — we build a box from the freshest catch of the week and deliver it chilled to your door.</p>
+          <p class="page-hero-sub">Tell us how many you feed and how often — we build a box from the freshest catch of
+            the week and deliver it chilled to your door.</p>
           <div class="flex-wrap" style="margin-top:26px;">
             <a href="#box-builder" class="btn btn-ocean">Build My Box</a>
             <a href="pricing.html" class="btn btn-secondary">See Plans</a>
           </div>
-          <div class="hero-countdown" style="margin-top:34px;">
-            <span class="hero-countdown-label">Next dispatch closes in</span>
-            <div class="countdown" data-countdown="2026-12-31T09:00:00">
-              <div class="cd-unit"><span data-cd-days>00</span><small>Days</small></div>
-              <div class="cd-unit"><span data-cd-hours>00</span><small>Hrs</small></div>
-              <div class="cd-unit"><span data-cd-mins>00</span><small>Min</small></div>
-              <div class="cd-unit"><span data-cd-secs>00</span><small>Sec</small></div>
-            </div>
-          </div>
         </div>
-        <div class="page-hero-media"><img src="../../assets/images/subscription_box.jpg" alt="MARIS weekly catch subscription box"></div>
+        <div class="page-hero-media"><img src="../../assets/images/subscription_box.jpg"
+            alt="MARIS weekly catch subscription box"></div>
       </div>
     </section>
 
@@ -59,7 +58,8 @@
         <div class="section-head">
           <span class="eyebrow">Build Your Box</span>
           <h2 class="section-title">Two Choices. One Fresh Box.</h2>
-          <p class="lead-text">Pick a size and a rhythm — your price updates instantly. Change it any week from your dashboard.</p>
+          <p class="lead-text">Pick a size and a rhythm — your price updates instantly. Change it any week from your
+            dashboard.</p>
         </div>
 
         <div class="box-builder" id="boxBuilder">
@@ -67,16 +67,21 @@
             <div class="builder-group">
               <h4>Choose your box size</h4>
               <div class="builder-options">
-                <button type="button" class="builder-option active" data-size="solo"><strong>Solo</strong><span>1–2 people</span></button>
-                <button type="button" class="builder-option" data-size="couple"><strong>Couple</strong><span>2–3 people</span></button>
-                <button type="button" class="builder-option" data-size="family"><strong>Family Feast</strong><span>4–6 people</span></button>
+                <button type="button" class="builder-option active" data-size="solo"><strong>Solo</strong><span>1–2
+                    people</span></button>
+                <button type="button" class="builder-option" data-size="couple"><strong>Couple</strong><span>2–3
+                    people</span></button>
+                <button type="button" class="builder-option" data-size="family"><strong>Family Feast</strong><span>4–6
+                    people</span></button>
               </div>
             </div>
             <div class="builder-group">
               <h4>Choose your frequency</h4>
               <div class="builder-options">
-                <button type="button" class="builder-option active" data-freq="weekly"><strong>Weekly</strong><span>Every week</span></button>
-                <button type="button" class="builder-option" data-freq="biweekly"><strong>Bi-weekly</strong><span>Every 2 weeks</span></button>
+                <button type="button" class="builder-option active"
+                  data-freq="weekly"><strong>Weekly</strong><span>Every week</span></button>
+                <button type="button" class="builder-option" data-freq="biweekly"><strong>Bi-weekly</strong><span>Every
+                    2 weeks</span></button>
               </div>
             </div>
           </div>
@@ -87,11 +92,18 @@
             <div class="builder-label" id="builderLabel">Solo Box · Weekly</div>
             <div class="builder-per" id="builderPer">/ box, every week</div>
             <ul class="check-list builder-includes">
-              <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg></span><span>Free chilled delivery</span></li>
-              <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg></span><span>Pause or skip anytime</span></li>
-              <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg></span><span>Traceability card included</span></li>
+              <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg></span><span>Free chilled delivery</span></li>
+              <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg></span><span>Pause or skip anytime</span></li>
+              <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg></span><span>Traceability card included</span></li>
             </ul>
-            <a href="../../public/auth/signup.html" class="btn btn-ocean w-100" style="margin-top:22px;">Start This Box</a>
+            <a href="../../public/auth/signup.html" class="btn btn-ocean w-100" style="margin-top:22px;">Start This
+              Box</a>
           </div>
         </div>
       </div>
@@ -107,15 +119,18 @@
         <div class="grid grid-3">
           <div class="feature-card text-center reveal">
             <div class="team-avatar" style="width:64px;height:64px;font-size:1.1rem;margin:0 auto 16px;">01</div>
-            <h4>Build Your Box</h4><p>Choose a size and frequency that matches your household and cooking rhythm.</p>
+            <h4>Build Your Box</h4>
+            <p>Choose a size and frequency that matches your household and cooking rhythm.</p>
           </div>
           <div class="feature-card text-center reveal">
             <div class="team-avatar" style="width:64px;height:64px;font-size:1.1rem;margin:0 auto 16px;">02</div>
-            <h4>We Pick the Best Catch</h4><p>Our fishmongers select the finest species landed that week, cut and packed to order.</p>
+            <h4>We Pick the Best Catch</h4>
+            <p>Our fishmongers select the finest species landed that week, cut and packed to order.</p>
           </div>
           <div class="feature-card text-center reveal">
             <div class="team-avatar" style="width:64px;height:64px;font-size:1.1rem;margin:0 auto 16px;">03</div>
-            <h4>Chilled to Your Door</h4><p>Delivered in insulated cold-chain packaging, with a card naming the boat and crew.</p>
+            <h4>Chilled to Your Door</h4>
+            <p>Delivered in insulated cold-chain packaging, with a card naming the boat and crew.</p>
           </div>
         </div>
       </div>
@@ -125,16 +140,32 @@
     <section class="section">
       <div class="container">
         <div class="split-media">
-          <div class="media-frame"><img src="../../assets/images/seafood_feast.jpg" alt="Seafood subscription box contents"></div>
+          <div class="media-frame"><img src="../../assets/images/seafood_feast.jpg"
+              alt="Seafood subscription box contents"></div>
           <div>
             <span class="eyebrow">What’s Inside</span>
-            <h2 style="font-size:clamp(1.8rem,3vw,2.5rem);color:var(--navy-deep);line-height:1.15;margin-bottom:16px;">A Rotating Menu of the Week’s Best</h2>
-            <p style="color:var(--text-muted);line-height:1.75;margin-bottom:24px;">Every box is a surprise built around what is landing at its peak. You might find line-caught sea bass, sweet tiger prawns, or hand-dived scallops — always fresh, always traceable.</p>
+            <h2 style="font-size:clamp(1.8rem,3vw,2.5rem);color:var(--navy-deep);line-height:1.15;margin-bottom:16px;">A
+              Rotating Menu of the Week’s Best</h2>
+            <p style="color:var(--text-muted);line-height:1.75;margin-bottom:24px;">Every box is a surprise built around
+              what is landing at its peak. You might find line-caught sea bass, sweet tiger prawns, or hand-dived
+              scallops — always fresh, always traceable.</p>
             <div class="grid grid-2" style="gap:16px;">
-              <div class="dash-card" style="padding:20px;"><h6 style="color:var(--navy-deep);margin-bottom:6px;">Fin Fish</h6><p style="font-size:.88rem;color:var(--text-muted);">Salmon, sea bass, mackerel, trout</p></div>
-              <div class="dash-card" style="padding:20px;"><h6 style="color:var(--navy-deep);margin-bottom:6px;">Shellfish</h6><p style="font-size:.88rem;color:var(--text-muted);">Prawns, mussels, crab, scallops</p></div>
-              <div class="dash-card" style="padding:20px;"><h6 style="color:var(--navy-deep);margin-bottom:6px;">Ready to Cook</h6><p style="font-size:.88rem;color:var(--text-muted);">Fillets, portioned, marinated</p></div>
-              <div class="dash-card" style="padding:20px;"><h6 style="color:var(--navy-deep);margin-bottom:6px;">Extras</h6><p style="font-size:.88rem;color:var(--text-muted);">Lemons, herbs, recipe cards</p></div>
+              <div class="dash-card" style="padding:20px;">
+                <h6 style="color:var(--navy-deep);margin-bottom:6px;">Fin Fish</h6>
+                <p style="font-size:.88rem;color:var(--text-muted);">Salmon, sea bass, mackerel, trout</p>
+              </div>
+              <div class="dash-card" style="padding:20px;">
+                <h6 style="color:var(--navy-deep);margin-bottom:6px;">Shellfish</h6>
+                <p style="font-size:.88rem;color:var(--text-muted);">Prawns, mussels, crab, scallops</p>
+              </div>
+              <div class="dash-card" style="padding:20px;">
+                <h6 style="color:var(--navy-deep);margin-bottom:6px;">Ready to Cook</h6>
+                <p style="font-size:.88rem;color:var(--text-muted);">Fillets, portioned, marinated</p>
+              </div>
+              <div class="dash-card" style="padding:20px;">
+                <h6 style="color:var(--navy-deep);margin-bottom:6px;">Extras</h6>
+                <p style="font-size:.88rem;color:var(--text-muted);">Lemons, herbs, recipe cards</p>
+              </div>
             </div>
           </div>
         </div>
@@ -149,10 +180,37 @@
           <h2 class="section-title">More Than a Fish Delivery</h2>
         </div>
         <div class="grid grid-4">
-          <div class="feature-card reveal"><div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 12v10H4V12M2 7h20v5H2zM12 22V7M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7zM12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"></path></svg></div><h4>Save Up to 20%</h4><p>Subscription pricing beats one-off orders on nearly every species.</p></div>
-          <div class="feature-card reveal"><div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></div><h4>Total Flexibility</h4><p>Skip a week, swap a species, or pause the whole plan in one tap.</p></div>
-          <div class="feature-card reveal"><div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 20A7 7 0 0 1 4 13c0-6 8-11 16-11 0 8-5 16-11 16z"></path></svg></div><h4>Sustainably Chosen</h4><p>We only box species that are in season and responsibly sourced.</p></div>
-          <div class="feature-card reveal"><div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg></div><h4>Freshness Guaranteed</h4><p>If a box ever misses our standard, we replace it free of charge.</p></div>
+          <div class="feature-card reveal">
+            <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M20 12v10H4V12M2 7h20v5H2zM12 22V7M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7zM12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z">
+                </path>
+              </svg></div>
+            <h4>Save Up to 20%</h4>
+            <p>Subscription pricing beats one-off orders on nearly every species.</p>
+          </div>
+          <div class="feature-card reveal">
+            <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg></div>
+            <h4>Total Flexibility</h4>
+            <p>Skip a week, swap a species, or pause the whole plan in one tap.</p>
+          </div>
+          <div class="feature-card reveal">
+            <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M11 20A7 7 0 0 1 4 13c0-6 8-11 16-11 0 8-5 16-11 16z"></path>
+              </svg></div>
+            <h4>Sustainably Chosen</h4>
+            <p>We only box species that are in season and responsibly sourced.</p>
+          </div>
+          <div class="feature-card reveal">
+            <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg></div>
+            <h4>Freshness Guaranteed</h4>
+            <p>If a box ever misses our standard, we replace it free of charge.</p>
+          </div>
         </div>
       </div>
     </section>
@@ -165,9 +223,33 @@
           <h2 class="section-title">Loved by Busy Kitchens</h2>
         </div>
         <div class="grid grid-3">
-          <div class="feature-card reveal"><div class="rating-stars">★★★★★</div><p style="font-style:italic;color:var(--text-dark);margin-bottom:16px;">“The box turned fish night into the easiest meal of our week. Everything arrives cold and beautiful.”</p><div class="blog-author-mini"><span class="author-avatar">LN</span><div><span style="display:block;">Lena Novak</span><small style="color:var(--text-muted);">Family Feast · Weekly</small></div></div></div>
-          <div class="feature-card reveal"><div class="rating-stars">★★★★★</div><p style="font-style:italic;color:var(--text-dark);margin-bottom:16px;">“As a couple we waste less and eat better. The recipe cards are a lovely touch.”</p><div class="blog-author-mini"><span class="author-avatar">RB</span><div><span style="display:block;">Ravi &amp; Bea</span><small style="color:var(--text-muted);">Couple Box · Bi-weekly</small></div></div></div>
-          <div class="feature-card reveal"><div class="rating-stars">★★★★★</div><p style="font-style:italic;color:var(--text-dark);margin-bottom:16px;">“I cook for one and the Solo Box is perfect — never too much, never boring.”</p><div class="blog-author-mini"><span class="author-avatar">MA</span><div><span style="display:block;">Michael Adeyemi</span><small style="color:var(--text-muted);">Solo Box · Weekly</small></div></div></div>
+          <div class="feature-card reveal">
+            <div class="rating-stars">★★★★★</div>
+            <p style="font-style:italic;color:var(--text-dark);margin-bottom:16px;">“The box turned fish night into the
+              easiest meal of our week. Everything arrives cold and beautiful.”</p>
+            <div class="blog-author-mini"><span class="author-avatar">LN</span>
+              <div><span style="display:block;">Lena Novak</span><small style="color:var(--text-muted);">Family Feast ·
+                  Weekly</small></div>
+            </div>
+          </div>
+          <div class="feature-card reveal">
+            <div class="rating-stars">★★★★★</div>
+            <p style="font-style:italic;color:var(--text-dark);margin-bottom:16px;">“As a couple we waste less and eat
+              better. The recipe cards are a lovely touch.”</p>
+            <div class="blog-author-mini"><span class="author-avatar">RB</span>
+              <div><span style="display:block;">Ravi &amp; Bea</span><small style="color:var(--text-muted);">Couple Box
+                  · Bi-weekly</small></div>
+            </div>
+          </div>
+          <div class="feature-card reveal">
+            <div class="rating-stars">★★★★★</div>
+            <p style="font-style:italic;color:var(--text-dark);margin-bottom:16px;">“I cook for one and the Solo Box is
+              perfect — never too much, never boring.”</p>
+            <div class="blog-author-mini"><span class="author-avatar">MA</span>
+              <div><span style="display:block;">Michael Adeyemi</span><small style="color:var(--text-muted);">Solo Box ·
+                  Weekly</small></div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -181,16 +263,38 @@
         </div>
         <div class="faq-accordion">
           <div class="faq-item open">
-            <button class="faq-q" aria-expanded="true"><span>When does my box ship?</span><span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg></span></button>
-            <div class="faq-a" style="max-height:260px;"><div class="faq-a-inner">Boxes ship on your chosen day each cycle, typically within 48 hours of the catch being landed. You will receive a dispatch notification with a live tracking link.</div></div>
+            <button class="faq-q" aria-expanded="true"><span>When does my box ship?</span><span class="faq-icon"><svg
+                  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg></span></button>
+            <div class="faq-a" style="max-height:260px;">
+              <div class="faq-a-inner">Boxes ship on your chosen day each cycle, typically within 48 hours of the catch
+                being landed. You will receive a dispatch notification with a live tracking link.</div>
+            </div>
           </div>
           <div class="faq-item">
-            <button class="faq-q" aria-expanded="false"><span>Can I choose what goes in my box?</span><span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg></span></button>
-            <div class="faq-a"><div class="faq-a-inner">You can set preferences — allergies, favourite and disliked species — in your dashboard, and we will build the box around them. Full a-la-carte swaps are available on the Abyss plan.</div></div>
+            <button class="faq-q" aria-expanded="false"><span>Can I choose what goes in my box?</span><span
+                class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg></span></button>
+            <div class="faq-a">
+              <div class="faq-a-inner">You can set preferences — allergies, favourite and disliked species — in your
+                dashboard, and we will build the box around them. Full a-la-carte swaps are available on the Abyss plan.
+              </div>
+            </div>
           </div>
           <div class="faq-item">
-            <button class="faq-q" aria-expanded="false"><span>Is there a minimum commitment?</span><span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg></span></button>
-            <div class="faq-a"><div class="faq-a-inner">None at all. There are no contracts or cancellation fees — pause or cancel whenever you like, directly from your dashboard.</div></div>
+            <button class="faq-q" aria-expanded="false"><span>Is there a minimum commitment?</span><span
+                class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg></span></button>
+            <div class="faq-a">
+              <div class="faq-a-inner">None at all. There are no contracts or cancellation fees — pause or cancel
+                whenever you like, directly from your dashboard.</div>
+            </div>
           </div>
         </div>
       </div>
@@ -222,4 +326,5 @@
   <script src="../../src/js/home2.js"></script>
   <script src="../../src/js/form-validation.js"></script>
 </body>
+
 </html>
