@@ -85,14 +85,12 @@ window.MARIS = window.MARIS || {};
       '  <div class="mobile-nav-panel" id="mobileNavPanel">' +
       '    <div class="mobile-nav-inner">' +
       navItem(U('index.html'), 'Home', 'home') +
-      navItem(U('public/pages/home-2.html'), 'Home — Niche', 'home-2') +
+      navItem(U('public/pages/home-2.html'), 'Home 2', 'home-2') +
+      navItem(U('public/pages/about.html'), 'About', 'about') +
       navItem(U('public/pages/products.html'), 'Products', 'products') +
       navItem(U('public/pages/blog.html'), 'Blog', 'blog') +
       navItem(U('public/pages/pricing.html'), 'Pricing', 'pricing') +
-      navItem(U('public/pages/about.html'), 'About', 'about') +
       navItem(U('public/pages/contact.html'), 'Contact', 'contact') +
-      navItem(U('public/pages/FAQ.html'), 'FAQs', 'faq') +
-      navItem(U('public/pages/coming-soon.html'), 'Coming Soon', 'coming-soon') +
       '      <div class="mobile-nav-divider"></div>' +
       '      <a href="' + U('public/auth/login.html') + '" class="mobile-nav-cta btn btn-secondary btn-sm">Login</a>' +
       '      <a href="' + U('public/auth/signup.html') + '" class="mobile-nav-cta btn btn-ocean btn-sm">Sign Up</a>' +

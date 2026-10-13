@@ -57,6 +57,8 @@ html {
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 body {
@@ -66,6 +68,8 @@ body {
   line-height: 1.6;
   overflow-x: hidden;
   position: relative;
+  max-width: 100%;
+  width: 100%;
 }
 
 img {
@@ -1952,7 +1956,7 @@ ul {
 .cart-drawer {
   position: fixed;
   top: 0;
-  right: -460px;
+  right: 0;
   width: 100%;
   max-width: 440px;
   height: 100vh;
@@ -1961,11 +1965,12 @@ ul {
   display: flex;
   flex-direction: column;
   box-shadow: -10px 0 40px rgba(0, 0, 0, 0.2);
-  transition: right var(--transition-base);
+  transform: translateX(100%);
+  transition: transform var(--transition-base);
 }
 
 .cart-drawer.active {
-  right: 0;
+  transform: translateX(0);
 }
 
 .cart-header {
@@ -2279,17 +2284,90 @@ ul {
     display: none;
   }
   
+  .side-rail {
+    display: none !important;
+  }
+
+  .container, .container-wide {
+    padding: 0 16px;
+  }
+  
+  .header-container {
+    padding: 0 16px;
+  }
+  
   .mobile-menu-toggle {
     display: flex;
   }
   
   .hero-section {
     min-height: auto;
-    padding-top: calc(var(--header-height) + 10px);
+    padding-top: calc(var(--header-height) + 14px);
+    padding-bottom: 36px;
+    margin-top: 0;
   }
-  
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    padding-left: 0;
+  }
+
+  .hero-title {
+    font-size: clamp(1.9rem, 7.5vw, 2.6rem);
+    line-height: 1.15;
+    margin-bottom: 16px;
+  }
+
+  .hero-description {
+    font-size: 0.98rem;
+    line-height: 1.6;
+    margin-bottom: 22px;
+  }
+
+  .hero-ctas {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+
+  .hero-ctas .btn {
+    width: 100%;
+    justify-content: center;
+    white-space: normal;
+    text-align: center;
+    padding: 13px 20px;
+  }
+
+  .hero-image-wrapper {
+    max-width: 100%;
+    transform: none !important;
+  }
+
   .hero-image-wrapper img {
-    height: 320px;
+    height: 240px;
+  }
+
+  .seafood-pin, .hero-wave-bg {
+    display: none !important;
+  }
+
+  .intro-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .intro-col {
+    padding: 24px 18px;
+  }
+
+  .species-rail {
+    display: none;
   }
   
   .products-grid {
@@ -2319,5 +2397,32 @@ ul {
   
   .cart-drawer {
     max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-container {
+    padding: 0 14px;
+  }
+
+  .brand-name {
+    font-size: 1.15rem;
+  }
+
+  .cart-btn {
+    width: 38px;
+    height: 38px;
+  }
+
+  .sourcing-card {
+    padding: 24px 18px;
+  }
+
+  .benefit-card {
+    padding: 24px 18px;
+  }
+
+  .testimonial-card {
+    padding: 24px 18px;
   }
 }
