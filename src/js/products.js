@@ -61,7 +61,6 @@ window.MARIS = window.MARIS || {};
       '  <div class="product-image-box">' +
       '    <a href="' + url + '"><img src="' + asset(p.image) + '" alt="' + esc(p.name) + '" loading="lazy"></a>' +
       '    <div class="card-badges">' +
-      '      <span class="status-badge status-fresh">' + esc(p.status) + '</span>' +
       '      <span class="origin-badge">' + esc(p.origin) + '</span>' +
       '    </div>' +
       '  </div>' +

@@ -23,11 +23,12 @@ window.MARIS = window.MARIS || {};
     cart: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>',
     sun: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M6.3 17.7l-1.4 1.4M19.1 4.9l-1.4 1.4"></path></svg>',
     moon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>',
-    rtl: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h13M12 5l5 7-5 7M18 5l3 7-3 7"></path></svg>',
+    rtl: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 9 17"></polyline><path d="M12 14H4"></path><path d="M12 5H4"></path><path d="M18 19H4"></path></svg>',
     login: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path><polyline points="10 17 15 12 10 7"></polyline><line x1="15" y1="12" x2="3" y2="12"></line></svg>',
     signup: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><line x1="19" y1="8" x2="19" y2="14"></line><line x1="22" y1="11" x2="16" y2="11"></line></svg>',
     shield: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>',
-    grid: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>'
+    grid: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>',
+    layout: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"></rect><line x1="9" y1="3" x2="9" y2="21"></line></svg>'
   };
 
   /* ------------------------------------------------------------------
@@ -54,27 +55,13 @@ window.MARIS = window.MARIS || {};
       navItem(U('public/pages/blog.html'), 'Blog', 'blog') +
       navItem(U('public/pages/pricing.html'), 'Pricing', 'pricing') +
       navItem(U('public/pages/contact.html'), 'Contact', 'contact') +
+      '<a href="' + U('public/auth/user/user-dashboard.html') + '" class="nav-link" data-page="dashboard">Dashboard</a>' +
       '    </nav>' +
 
       '    <div class="header-actions">' +
       '      <button class="icon-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle theme">' + icons.sun + '</button>' +
-      '      <button class="icon-toggle rtl-toggle" id="rtlToggle" aria-label="Toggle right-to-left layout" title="Toggle RTL">' + icons.rtl + '</button>' +
+      '      <button class="icon-toggle rtl-toggle" id="rtlToggle" aria-label="Toggle right-to-left layout" title="Toggle text direction">' + icons.rtl + '</button>' +
       '      <button class="cart-btn" id="cartBtn" aria-label="Open Shopping Cart">' + icons.cart + '<span class="cart-counter" id="cartCounter">0</span></button>' +
-
-      '      <div class="profile-wrapper" id="profileWrapper">' +
-      '        <button class="icon-toggle" id="profileBtn" aria-haspopup="true" aria-expanded="false" aria-label="Account menu">' + icons.user + '</button>' +
-      '        <div class="profile-dropdown" id="profileDropdown" role="menu">' +
-      '          <div class="profile-dropdown-head">' +
-      '            <span class="pdh-title">Welcome to MARIS</span>' +
-      '            <span class="pdh-sub">Sign in or explore a dashboard</span>' +
-      '          </div>' +
-      '          <a href="' + U('public/auth/login.html') + '" role="menuitem">' + icons.login + ' Login</a>' +
-      '          <a href="' + U('public/auth/signup.html') + '" role="menuitem">' + icons.signup + ' Sign Up</a>' +
-      '          <div class="dropdown-divider"></div>' +
-      '          <a href="' + U('public/auth/admin/admin-dashboard.html') + '" role="menuitem">' + icons.shield + ' Admin Dashboard</a>' +
-      '          <a href="' + U('public/auth/user/user-dashboard.html') + '" role="menuitem">' + icons.grid + ' User Dashboard</a>' +
-      '        </div>' +
-      '      </div>' +
 
       '      <a href="' + U('index.html') + '#catch" class="btn btn-ocean btn-sm header-cta">Shop Catch</a>' +
 
@@ -91,12 +78,13 @@ window.MARIS = window.MARIS || {};
       navItem(U('public/pages/blog.html'), 'Blog', 'blog') +
       navItem(U('public/pages/pricing.html'), 'Pricing', 'pricing') +
       navItem(U('public/pages/contact.html'), 'Contact', 'contact') +
-      '      <div class="mobile-nav-divider"></div>' +
-      '      <a href="' + U('public/auth/login.html') + '" class="mobile-nav-cta btn btn-secondary btn-sm">Login</a>' +
-      '      <a href="' + U('public/auth/signup.html') + '" class="mobile-nav-cta btn btn-ocean btn-sm">Sign Up</a>' +
-      '    </div>' +
-      '  </div>' +
-      '</header>';
+       '      <div class="mobile-nav-divider"></div>' +
+       '      <a href="' + U('public/auth/user/user-dashboard.html') + '" class="mobile-nav-cta btn btn-secondary btn-sm">Dashboard</a>' +
+       '      <a href="' + U('public/auth/login.html') + '" class="mobile-nav-cta btn btn-secondary btn-sm">Login</a>' +
+       '      <a href="' + U('public/auth/signup.html') + '" class="mobile-nav-cta btn btn-ocean btn-sm">Sign Up</a>' +
+       '    </div>' +
+       '  </div>' +
+       '</header>';
   }
 
   /* ------------------------------------------------------------------
@@ -111,7 +99,7 @@ window.MARIS = window.MARIS || {};
       '      <div class="footer-brand">' +
       '        <a href="' + U('index.html') + '" class="brand-logo" style="margin-bottom:12px;">' +
       '          <div class="logo-symbol"><img src="' + U('assets/images/logo.png') + '" alt="MARIS logo"></div>' +
-      '          <div class="brand-text"><span class="brand-name">MARIS &amp; CATCH</span></div>' +
+      '          <div class="brand-text"><span class="brand-name">MARIS</span></div>' +
       '        </a>' +
       '        <p class="footer-about">Delivering daily caught ocean fish, pristine coastal shellfish, and responsibly sourced seafood directly from local markets and verified fishers to home kitchens.</p>' +
       '        <div class="footer-coldchain-badge">' +

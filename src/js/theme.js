@@ -69,6 +69,7 @@ window.MARIS = window.MARIS || {};
     if (!btn) return;
     btn.classList.toggle('is-active', dir === 'rtl');
     btn.setAttribute('title', dir === 'rtl' ? 'Switch to LTR layout' : 'Switch to RTL layout');
+    btn.setAttribute('aria-label', dir === 'rtl' ? 'Switch to LTR layout' : 'Switch to RTL layout');
   }
 
   /* -------- INITIAL -------- */

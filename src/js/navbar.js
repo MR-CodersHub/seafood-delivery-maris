@@ -30,7 +30,7 @@ window.MARIS = window.MARIS || {};
     var cartBtn = document.getElementById('cartBtn');
     var backToTop = document.getElementById('backToTop');
 
-    if (!profileBtn && !header) return;
+    if (!header) return;
     initialized = true;
 
     /* ---- Profile dropdown ---- */
